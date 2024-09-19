@@ -1,0 +1,38 @@
+// colors
+$black: #242424;
+$white: #ffffff;
+$bg-color: #E1E1E1;
+$bg-color-transparent: #e1e1e1e8;
+$bg-color-earth: #262D46;
+
+
+// fonts
+@font-face {
+  font-family: "Satoshi";
+  src: url("../../public/fonts/Satoshi-Medium.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("../../public/fonts/Satoshi-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("../../public/fonts/Satoshi-Medium.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("../../public/fonts/Satoshi-Regular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("../../public/fonts/Satoshi-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
