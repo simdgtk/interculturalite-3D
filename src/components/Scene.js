@@ -35,14 +35,14 @@ export default function Scene() {
             backgroundBlurriness={1}
           ></Environment>
           <OrbitControls enableDamping maxDistance={10} minDistance={5} />
-
+          <axesHelper args={[5]} />
           <directionalLight
             position={[2, 5, 2]}
             intensity={2}
             color={0xe7e7e7}
           />
           {/* appelle la fonction handleClick au clic */}
-          <Model onClick={handleClick} />
+          <Model onClick={handleClick} showFrance />
         </Canvas>
       </div>
     </>
