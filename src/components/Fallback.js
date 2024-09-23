@@ -1,29 +1,16 @@
-import React, { useState, useEffect } from "react";
-import './Fallback.scss'; 
+import "./Fallback.scss";
+import { useProgress } from "@react-three/drei";
 
 export default function Fallback() {
-  const [progress, setProgress] = useState(1);
-
-  //met à jour le pourcentage de chargement
-  useEffect(() => {
-    const interval = setInterval(() => {
-      // Incrémente le pourcentage jusqu'à 100%
-      setProgress((prevProgress) =>
-        prevProgress < 100 ? prevProgress + 1 : 100
-      );
-    }, 100); 
-
-    // Nettoie l'intervalle lorsque le composant est démonté
-    return () => clearInterval(interval);
-  }, []);
+  const { progress } = useProgress();
 
   return (
     <div className="fallback">
       <div className="loader">
         <h1>Chargement</h1>
         {/* Affiche la progression */}
-        <span>{progress} %</span> 
-        
+        <span>{progress < 98 ? progress.toPrecision(2) : 98} %</span>
+
         {/* Barre de progression */}
         <div className="progress-bar">
           <div className="progress" style={{ width: `${progress}%` }}></div>
