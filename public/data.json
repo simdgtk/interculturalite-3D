@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Introduction à React",
+    "image_url": "https://example.com/images/react-intro.png",
+    "paragraph": "React est une bibliothèque JavaScript populaire pour construire des interfaces utilisateurs interactives et réactives.",
+    "category": "rituel",
+    "related_articles": [
+      "Pourquoi utiliser React pour vos projets web ?",
+      "Les bases de React : composants et état",
+      "Comment gérer l'état avec React"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Découverte de Three.js",
+    "image_url": "https://example.com/images/threejs-intro.png",
+    "paragraph": "Three.js permet de créer des graphiques 3D interactifs sur le web en utilisant WebGL.",
+    "category": "rituel",
+    "related_articles": [
+      "Créer une scène 3D avec Three.js",
+      "Les fondamentaux de WebGL avec Three.js",
+      "Les lumières et matériaux dans Three.js"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Optimiser une page web avec Next.js",
+    "image_url": "https://example.com/images/nextjs-optimization.png",
+    "paragraph": "Next.js est un framework React permettant de rendre vos applications plus performantes grâce à la génération statique et au rendu côté serveur.",
+    "category": "rituel",
+    "related_articles": [
+      "Les avantages de l'utilisation de Next.js",
+      "Comment configurer une application Next.js",
+      "Rendu côté serveur avec Next.js"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Les bienfaits du Yoga",
+    "image_url": "https://example.com/images/yoga-benefits.png",
+    "paragraph": "Le yoga est une pratique ancestrale qui permet d'améliorer la flexibilité, la respiration et la méditation.",
+    "category": "sport",
+    "related_articles": [
+      "Comment commencer le yoga chez soi",
+      "Les différents types de yoga",
+      "Yoga et méditation : un duo gagnant"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "L'importance des rituels matinaux",
+    "image_url": "https://example.com/images/morning-ritual.png",
+    "paragraph": "Les rituels matinaux aident à démarrer la journée du bon pied, en se concentrant sur des activités positives.",
+    "category": "rituel",
+    "related_articles": [
+      "Comment construire une routine matinale efficace",
+      "Les bienfaits de la méditation matinale",
+      "Les 5 rituels matinaux des entrepreneurs à succès"
+    ]
+  }
+]

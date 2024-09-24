@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Environment, OrbitControls } from "@react-three/drei";
 import Model from "./Model";
+import PopupTest from "./PopupTest";
 
 export default function Scene() {
   const cameraRef = useRef();
