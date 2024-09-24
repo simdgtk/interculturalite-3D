@@ -1,0 +1,47 @@
+body{
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto; /* Assure que le corps de la page puisse scroller verticalement */
+    }
+.container{
+    position: relative;
+    max-width: 100vw;
+    height: auto;
+    margin: 70px 50px;
+    border-radius: 53px;
+    background: #906b6b;
+    overflow: auto; /* Ajoute du scroll si le contenu déborde */
+    .bloc{
+        padding: 70px 75px;
+    }
+    .header-modal{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        h2{
+            font-family: 'Satoshi';
+            font-weight: bold;
+            font-size: 90px;
+        }
+        button{
+            width: 70px;
+            height: 70px;
+        }
+    }
+    .body-modal{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 50px;
+        .img-modal{
+        }
+    }
+    .footer-modal{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
