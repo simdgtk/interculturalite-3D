@@ -23,7 +23,7 @@ const SimpleModal = ({ }) => {
                     <div>
                         <h3>VOYAGER VERS</h3>
                     </div>
-                    <div>
+                    <div className='link-footer-modal'>
                         <div>
                             <img src='#' alt='#'></img>
                             <a href='#'>Titre article 1</a>

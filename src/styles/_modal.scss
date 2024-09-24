@@ -6,7 +6,7 @@ body{
     }
 .container{
     position: relative;
-    max-width: 100vw;
+    width: auto;
     height: auto;
     margin: 70px 50px;
     border-radius: 53px;
@@ -37,11 +37,19 @@ body{
         gap: 50px;
         .img-modal{
         }
+        p{
+            width: 663px;
+        }
     }
     .footer-modal{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+    .link-footer-modal{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
     }
 }
