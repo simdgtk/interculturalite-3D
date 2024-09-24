@@ -1,4 +1,5 @@
-import "./Fallback.scss";
+import "../styles/_fallback.scss";
+import "../styles/_variables.scss"; 
 import { useProgress } from "@react-three/drei";
 
 export default function Fallback() {

@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #1A1D28;
 
     .loader {
         text-align: center;
@@ -12,10 +12,12 @@
         h1 {
             font-size: 24px;
             margin-bottom: 20px;
+            color: #e0e0e0;
         }
 
         span {
             font-size: 20px;
+            color: #e0e0e0;
         }
 
         .progress-bar {
@@ -40,7 +42,7 @@
         margin-top: 20px;
         p {
             font-size: 16px;
-            color: #333;
+            color: #e0e0e0;
         }
     }
 }  

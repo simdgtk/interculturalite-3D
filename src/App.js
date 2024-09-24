@@ -6,7 +6,7 @@ import "./styles/index.scss";
 function App() {
   return (
     <Suspense fallback={<Fallback />}>
-      <Scene />
+    <Scene />
     </Suspense>
   );
 }
