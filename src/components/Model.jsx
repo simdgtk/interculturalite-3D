@@ -127,7 +127,7 @@ export default function Model(props) {
   };
   return (
     <>
-      <group {...props} dispose={null} rotation={[0, 0.8, 0.1]}>
+      <group {...props} dispose={null} rotation={[0, -4.2, 0.2]}>
         <mesh
           castShadow
           receiveShadow
