@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "../styles/_modal.scss";
+import { gsap } from "gsap/gsap-core";
+import { useGSAP } from "@gsap/react";
 
 const Modal = ({ title, paragraph, isOpen, onClose }) => {
+  gsap.registerPlugin(useGSAP);
+  const divRef = useRef(null);
+
+  useEffect(() => {
+    gsap.from(divRef.current, { y: 250, opacity: 0, ease: "power2.out" });
+  });
   return (
-    <div className={`modal ${isOpen ? "open" : "closed"}`}>
+    <div
+      className={`modal ${isOpen ? "open" : "closed"}`}
+      id="modal"
+      ref={divRef}
+    >
       <div className="bloc">
         <div className="header-modal">
           <h2>{title}</h2>
