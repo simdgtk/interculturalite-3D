@@ -128,6 +128,15 @@ export default function Model(props) {
   };
   return (
     <>
+      {/* <Html
+        as="div" // Wrapping element (default: 'div')
+        wrapperClass // The className of the wrapping element (default: undefined)
+        fullscreen // Aligns to the upper-left corner, fills the screen (default:false) [ignored in transform mode]
+        transform={[-25, 0, 0]} // Translation offset (default: [0, 0, 0])
+      >
+        <Modal title={title} />
+      </Html> */}
+
       <group {...props} dispose={null} rotation={[0, -4.2, 0.2]}>
         <mesh
           castShadow
@@ -383,10 +392,6 @@ export default function Model(props) {
           />
         </group>
       </group>
-      <Html>
-        <Modal title={title} />
-        {/* <PopupTest title={title} /> */}
-      </Html>
     </>
   );
 }

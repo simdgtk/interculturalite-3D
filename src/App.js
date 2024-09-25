@@ -7,9 +7,9 @@ import "./styles/index.scss";
 
 function App() {
   return (
-    //<Suspense fallback={<Fallback />}>
+    //  <Suspense fallback={<Fallback />}>
     //  <Scene />
-    //</Suspense>
+    //  </Suspense>
     <Menu />
   );
 }
