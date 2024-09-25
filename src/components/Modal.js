@@ -8,12 +8,13 @@ const SimpleModal = ({ }) => {
                 <div className="header-modal">
                     <h2>Titre du Modal</h2>
                     <button>
-
+        <img src='./close.svg' alt='image close'></img>
                     </button>
                 </div>
                 <div className="body-modal">
                     <div className='container-img-modal'>
                         <div className="img-modal">
+                            <img src='./image1.jpg' alt='image 1'></img>
                         </div>
                     </div>
                     <div className='text-modal'>
