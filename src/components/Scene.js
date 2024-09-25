@@ -1,8 +1,9 @@
 import React, { useRef } from "react";
 import { Canvas } from "@react-three/fiber";
-import { Environment, OrbitControls } from "@react-three/drei";
+import { Environment, Html, OrbitControls } from "@react-three/drei";
 import Model from "./Model";
 import PopupTest from "./PopupTest";
+import Modal from "./Modal";
 
 export default function Scene() {
   const cameraRef = useRef();
@@ -43,8 +44,17 @@ export default function Scene() {
             color={0xe7e7e7}
           />
           {/* appelle la fonction handleClick au clic */}
+          {/* <Html
+            as="div" // Wrapping element (default: 'div')
+            wrapperClass // The className of the wrapping element (default: undefined)
+            fullscreen // Aligns to the upper-left corner, fills the screen (default:false) [ignored in transform mode]
+            transform={false}
+          >
+            <Modal />
+          </Html> */}
           <Model onClick={handleClick} showFrance />
         </Canvas>
+        {/* <Modal /> */}
       </div>
     </>
   );

@@ -4,7 +4,6 @@ import React from "react";
 const Modal = ({ title = "Lorem ipsum", paragraph = "lorem etc..." }) => {
   return (
     <div className="modal">
-      <div className="container">
         <div className="bloc">
           <div className="header-modal">
             <h2>{title}</h2>
@@ -63,7 +62,6 @@ const Modal = ({ title = "Lorem ipsum", paragraph = "lorem etc..." }) => {
             </div>
           </div>
         </div>
-      </div>
     </div>
   );
 };
