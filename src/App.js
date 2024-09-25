@@ -10,7 +10,7 @@ function App() {
   //  <Suspense fallback={<Fallback />}>
   //  <Scene />
   //  </Suspense>
-  <Modal></Modal>
+  <Menu></Menu>
   );
 }
 
