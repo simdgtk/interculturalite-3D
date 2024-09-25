@@ -1,0 +1,165 @@
+html{
+    background-color: #000;
+}
+#root{
+    background-color: #000;
+}
+body{
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto; /* Assure que le corps de la page puisse scroller verticalement */
+    }
+.container{
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: 40px 50px;
+    border-radius: 23px;
+    background-image: url(../../public/so-white.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    .bloc{
+        padding: 5% 6%;
+    }
+    @media (min-width: 760px) {
+        border-radius: 53px;
+    }
+    .header-modal{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+        h2{
+            font-family: 'Satoshi';
+            font-weight: bold;
+            font-size: 36px;
+            @media (min-width: 760px) {                
+                font-size: 60px;
+            }
+            @media (min-width: 1080px) {
+                font-size: 90px;
+            }
+        }
+        button{
+            width: 25px;
+            height: 25px;
+            border: none;
+            background-color: none;
+            opacity: 0.7;
+            transition: 0.3s;
+            cursor: pointer;
+            &:hover{
+                transform: 0.3s;
+                opacity: 1;
+            }
+            @media (min-width: 760px) {
+                width: 45px;
+                height: 45px;
+            }
+            @media (min-width: 1080px) {
+                width: 70px;
+                height: 70px;
+            }
+        }
+    }
+    .body-modal{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 50px;
+        margin-bottom: 40px;
+        @media (min-width: 760px) {
+            flex-direction: row;
+        }
+        .container-img-modal{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .img-modal{
+                flex-shrink: 0;
+                justify-content: center;
+                width: 229px;
+                height: 386px;
+                @media (min-width: 1080px) {
+                    width: 429px;
+                    height: 586px;
+                }
+            }
+
+        }
+        .text-modal{
+            flex-grow: 1;
+            width: auto;
+            min-width: 150px;
+            p{
+                font-size: 14px;
+                @media (min-width: 1080px) {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .footer-modal{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10px;
+        gap: 30px;
+        background: rgba(0, 0, 0, 0.20);
+        padding: 20px 30px;
+        @media (min-width:760px) {
+            flex-direction: row;
+            gap: 0;
+        }
+        h3{
+            font-size: 16px;
+            font-weight: bold;
+            @media (min-width: 760px) {
+                font-size: 20px;
+            }
+        }
+        .link-footer-modal{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-right: 2%;
+            @media (min-width: 760px) {
+                flex-direction: row;
+            }
+            .hyperlink-modal{
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                align-items: center;
+                opacity: 0.7;
+                cursor: pointer;
+                transition: 0.3s;
+                &:hover{
+                    transition: 0.3;
+                    opacity: 1;
+                }
+                .img-footer-modal{
+                    background-image: url(../../public/earth.png);
+                    width: 31px;
+                    height: 31px;
+                }
+                a{
+                    text-decoration: none;
+                    font-weight: bold;
+                    font-family: 'Satoshi';
+                    font-size: 14px;
+                    @media (min-width: 760px) {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
