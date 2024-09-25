@@ -17,6 +17,13 @@ $bg-color-earth: #1A1D28;
                 position: absolute;
                 padding-top: 15px;
                 color: $bg-color;
+                font-size: 35px;
+                @media (min-width: 700px) {
+                    font-size: 60px;
+                }
+                @media (min-width: 1080px) {
+                    font-size: 90px;
+                }
             }
         }
 
@@ -25,7 +32,7 @@ $bg-color-earth: #1A1D28;
             justify-content: center;
 
             img {
-                width: 100vw;
+                width: 100%;
 
                 @media (min-width: 700px) {
                     position: absolute;
@@ -39,8 +46,23 @@ $bg-color-earth: #1A1D28;
         }
 
         .container-description-menu {
-            padding: 10px 30px;
-            padding-bottom: 80px;
+            width: 100%;
+            height: 378px;
+            display: flex;
+            flex-direction: column;
+            
+            @media (min-width: 700px) {
+                align-items: end;
+                padding-top: 350px;
+
+            }
+            .description-menu{
+                max-width: 400px;
+                padding: 30px 20px;
+                @media (min-width: 1080px) {
+                    padding: 30px 70px;
+                }
+            }
             .container-human-menu {
                 width: 100%;
                 height: auto;
@@ -48,13 +70,13 @@ $bg-color-earth: #1A1D28;
                 flex-direction: row;
                 align-items: end;
                 gap: 5px;
-                @media (min-width: 700px) {
-                    padding-top: 450px;
-                }
 
                 h2 {
                     color: $bg-color;
                     font-size: 60px;
+                    @media (min-width: 700px) {
+                        font-size: 80px;
+                    }
                 }
 
                 .text-menu {
@@ -64,6 +86,39 @@ $bg-color-earth: #1A1D28;
                     p {
                         font-size: 10px;
                         color: $bg-color-earth;
+                        @media (min-width: 700px) {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            .link-menu{
+                width: 100%;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                @media (min-width: 700px) {
+                    justify-content: end;
+                    padding-right: 188px;
+                }
+                a{
+                    border-radius: 50%;
+                    border: 2px solid $bg-color;
+                    width: 35px;
+                    height: 35px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        width: 20px;
+                        height: 20px;
+                        border: none;
+                    }
+                    transition: transform 0.3s ease;
+                    &:hover{
+                        transition: 0.3s;
+                        transform: scale(1.2);
+
                     }
                 }
             }

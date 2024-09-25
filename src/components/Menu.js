@@ -3,6 +3,7 @@ import React from "react";
 
 export default function Menu() {
     return (
+        
         <div className="menu">
             <div className="container">
                 <div className="title-menu">
@@ -12,7 +13,7 @@ export default function Menu() {
                     <img src="./human1.png" alt="human 1"></img>
                 </div>
                 <div className="container-description-menu">
-                    <div>
+                    <div className="description-menu">
                         <div className="container-human-menu">
                             <div>
                                 <h2>humain</h2>
@@ -34,8 +35,10 @@ export default function Menu() {
                             </p>
                         </div>
                     </div>
-                    <div>
-                        <a href="#"></a>
+                    <div className="link-menu">
+                        <a href="#">
+                            <img src="./Arrow1.svg" alt="arrow"></img>
+                        </a>
                     </div>
                 </div>
             </div>
