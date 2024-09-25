@@ -1,0 +1,316 @@
+{
+    "categories": [
+        {
+            "id": 1,
+            "name": "Nourriture",
+            "items": [
+                {
+                    "id": 101,
+                    "name": "L’éthnie peut-elle impacter notre digestion ? (japonais et le poisson cru)",
+                    "description": "A high-end smartphone with a powerful processor",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 102,
+                    "name": "L’hydromel dans la culture viking",
+                    "description": "A lightweight laptop with 16GB RAM and 512GB SSD",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 103,
+                    "name": "Prohibition",
+                    "description": "A lightweight laptop with 16GB RAM and 512GB SSD",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 104,
+                    "name": "Dionysos",
+                    "description": "A lightweight laptop with 16GB RAM and 512GB SSD",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 105,
+                    "name": "Croissant",
+                    "description": "A lightweight laptop with 16GB RAM and 512GB SSD",
+                    "image": "../public/img-articles/#"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Culture",
+            "items": [
+                {
+                    "id": 201,
+                    "name": "Danse de l’herbe amérindienne",
+                    "description": "A comfortable cotton t-shirt available in various sizes",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 202,
+                    "name": "Le henné au Maghreb",
+                    "description": "Slim-fit jeans with a modern cut",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 203,
+                    "name": "Coquelicot",
+                    "description": "Slim-fit jeans with a modern cut",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 204,
+                    "name": "L’origine du tissu madras antillais",
+                    "description": "Slim-fit jeans with a modern cut",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 205,
+                    "name": "Aun no Kokyu",
+                    "description": "Slim-fit jeans with a modern cut",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 206,
+                    "name": "Les colorations capilaires",
+                    "description": "Slim-fit jeans with a modern cut",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 207,
+                    "name": "La couleur blanche en Chine",
+                    "description": "Slim-fit jeans with a modern cut",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 208,
+                    "name": "Chant de gorge inuit",
+                    "description": "Slim-fit jeans with a modern cut",
+                    "image": "../public/img-articles/#"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Peuple",
+            "items": [
+                {
+                    "id": 301,
+                    "name": "La découverte du bronze",
+                    "description": "An exciting journey through space and time",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 302,
+                    "name": "Qui sont les Sumeriens ?",
+                    "description": "An in-depth look at world history events",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 303,
+                    "name": "découverte de la roue et ses conséquences",
+                    "description": "An exciting journey through space and time",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 304,
+                    "name": "Lotus Inde",
+                    "description": "An in-depth look at world history events",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 305,
+                    "name": "Tu Er Shen (Dieu chinois LGBT)",
+                    "description": "An exciting journey through space and time",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 306,
+                    "name": "L’or dans l’egypte Ancienne",
+                    "description": "An in-depth look at world history events",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 307,
+                    "name": "Double",
+                    "description": "An exciting journey through space and time",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 308,
+                    "name": "Quelles sont les origines du Taoïsme ?",
+                    "description": "An in-depth look at world history events",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 309,
+                    "name": "Comment Akhenaton à chambouler l’égypte avec son culte d’aton",
+                    "description": "An exciting journey through space and time",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 310,
+                    "name": "transmigration des âmes chez les druzes",
+                    "description": "An in-depth look at world history events",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 311,
+                    "name": "Tête réduite",
+                    "description": "An exciting journey through space and time",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 312,
+                    "name": "Les conscrits",
+                    "description": "An in-depth look at world history events",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 313,
+                    "name": "Cempasúchil",
+                    "description": "An exciting journey through space and time",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 314,
+                    "name": "Thaipusam",
+                    "description": "An in-depth look at world history events",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 315,
+                    "name": "Ganga Aarti à Varanasi",
+                    "description": "An exciting journey through space and time",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 316,
+                    "name": "Manene",
+                    "description": "An in-depth look at world history events",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 317,
+                    "name": "Rite de passage des Satere-Mawe",
+                    "description": "An exciting journey through space and time",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 318,
+                    "name": "Masque de Côte d'Ivoire",
+                    "description": "An in-depth look at world history events",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 319,
+                    "name": "Njom, la lutte sénégalaise",
+                    "description": "An exciting journey through space and time",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 320,
+                    "name": "Pok-ta-Pok",
+                    "description": "An in-depth look at world history events",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 321,
+                    "name": "Kin-Ball",
+                    "description": "An exciting journey through space and time",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 322,
+                    "name": "l’origine du Jujitsu",
+                    "description": "An in-depth look at world history events",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 323,
+                    "name": "Tanden",
+                    "description": "An exciting journey through space and time",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 324,
+                    "name": "Imhotep et la médecine égyptienne",
+                    "description": "An in-depth look at world history events",
+                    "image": "../public/img-articles/#"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Politique",
+            "items": [
+                {
+                    "id": 401,
+                    "name": "En quoi Thomas Sankara est une personnalité politique culte au Burkina Faso ?",
+                    "description": "Powerful vacuum cleaner for deep cleaning",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 402,
+                    "name": "Révolution russe de 1917",
+                    "description": "Compact microwave with multiple power settings",
+                    "image": "../public/img-articles/#"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Sexualité",
+            "items": [
+                {
+                    "id": 501,
+                    "name": "l’homosexualité dans la Rome antique",
+                    "description": "Superhero action figure with movable parts",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 502,
+                    "name": "Pourquoi l’homosexualité est mal vue dans le christianisme",
+                    "description": "1000-piece jigsaw puzzle for ages 10 and up",
+                    "image": "../public/img-articles/#"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Environnement",
+            "items": [
+                {
+                    "id": 601,
+                    "name": "La Grande Mosquée de Djenné",
+                    "description": "Standard size football for outdoor play",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 602,
+                    "name": "Le temple Göbekli Tepe",
+                    "description": "Standard size football for outdoor play",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 603,
+                    "name": "Mosquée-Cathédrale de Cordoue",
+                    "description": "Standard size football for outdoor play",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 604,
+                    "name": "Comment les Viking ont construit leur maison en Norvège",
+                    "description": "Standard size football for outdoor play",
+                    "image": "../public/img-articles/#"
+                },
+                {
+                    "id": 605,
+                    "name": "Comment les mayas on fait pour avoir une si grande connaissance des astres",
+                    "description": "Standard size football for outdoor play",
+                    "image": "../public/img-articles/#"
+                }
+            ]
+        }
+    ]
+}
