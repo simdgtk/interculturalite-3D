@@ -18,11 +18,12 @@ $bg-color-earth: #1A1D28;
                 padding-top: 15px;
                 color: $bg-color;
                 font-size: 35px;
+                font-weight: bold;
                 @media (min-width: 700px) {
                     font-size: 60px;
                 }
                 @media (min-width: 1080px) {
-                    font-size: 90px;
+                    font-size: 110px;
                 }
             }
         }
@@ -74,6 +75,7 @@ $bg-color-earth: #1A1D28;
                 h2 {
                     color: $bg-color;
                     font-size: 60px;
+                    font-weight: bold;
                     @media (min-width: 700px) {
                         font-size: 80px;
                     }
