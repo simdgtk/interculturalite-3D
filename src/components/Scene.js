@@ -38,7 +38,7 @@ export default function Scene() {
             backgroundBlurriness={1}
           ></Environment>
           <OrbitControls enableDamping maxDistance={10} minDistance={5} />
-          <axesHelper args={[5]} />
+          {/* <axesHelper args={[5]} /> */}
           <directionalLight
             position={[2, 5, 2]}
             intensity={2}

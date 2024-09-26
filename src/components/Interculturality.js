@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 
-export default function Interculturality() {
+export default function Interculturality({ small = false }) {
   const interculturalityWords = [
     "interculturality", // Anglais
     "تعدد الثقافات", // Arabe
@@ -90,10 +90,8 @@ export default function Interculturality() {
     setWord(interculturalityWords[index]);
   }, [index, interculturalityWords]);
   return (
-    <div className="interculturality">
-      <span id="span">
-        {word}
-      </span>
+    <div className={`interculturality ${small ? "small" : ""}`}>
+      <span id="span">{word}</span>
     </div>
   );
 }
