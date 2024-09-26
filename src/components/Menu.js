@@ -1,4 +1,5 @@
 import "../styles/_menu.scss";
+import Interculturality from "./Interculturality";
 import React from "react";
 import Interculturality from "./Interculturality";
 
