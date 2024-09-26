@@ -10,10 +10,6 @@ export default function Scene() {
   const cameraRef = useRef();
   const canvasRef = useRef();
 
-  const handleClick = (event) => {
-    event.stopPropagation(); // pour stopper la propagation, que les éléments de derrière ne soient pas cliqués
-    console.log("Vous avez cliqué sur le modèle !");
-  };
   const [isSport, setIsSport] = useState(true);
   const [isRitual, setIsRitual] = useState(true);
   return (
@@ -97,14 +93,14 @@ export default function Scene() {
             setIsSport(!isSport);
           }}
         >
-          Test
+          Sports
         </button>
         <button
           onClick={() => {
             setIsRitual(!isRitual);
           }}
         >
-          Test
+          Rituels
         </button>
         <Canvas
           camera={{
@@ -125,29 +121,23 @@ export default function Scene() {
             backgroundIntensity={2}
             backgroundBlurriness={1}
           ></Environment>
-          <OrbitControls enableDamping maxDistance={10} minDistance={5} />
+          <OrbitControls
+            enablePan={false}
+             enableDamping
+            maxDistance={10}
+            minDistance={5}
+          />
           {/* <axesHelper args={[5]} /> */}
           <directionalLight
             position={[2, 5, 2]}
             intensity={2}
             color={0xe7e7e7}
           />
-          {/* appelle la fonction handleClick au clic */}
-          {/* <Html
-            as="div" // Wrapping element (default: 'div')
-            wrapperClass // The className of the wrapping element (default: undefined)
-            fullscreen // Aligns to the upper-left corner, fills the screen (default:false) [ignored in transform mode]
-            transform={false}
-          >
-            <Modal />
-          </Html> */}
           <Model
-            onClick={handleClick}
             sport={isSport ? true : false}
             rituel={isRitual ? true : false}
           />
         </Canvas>
-        {/* <Modal /> */}
       </div>
     </>
   );
