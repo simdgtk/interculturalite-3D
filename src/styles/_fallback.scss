@@ -1,0 +1,48 @@
+.fallback {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1A1D28;
+
+    .loader {
+        text-align: center;
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #e0e0e0;
+        }
+
+        span {
+            font-size: 20px;
+            color: #e0e0e0;
+        }
+
+        .progress-bar {
+            width: 100%;
+            max-width: 400px;
+            height: 20px;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            margin-top: 10px;
+            overflow: hidden;
+
+        .progress {
+            height: 100%;
+            background-color: #4caf50;
+            width: 0; // La barre commence à 0
+            transition: width 0.1s linear; // Animation fluide de la largeur
+        }
+    }
+    }
+
+    .info {
+        margin-top: 20px;
+        p {
+            font-size: 16px;
+            color: #e0e0e0;
+        }
+    }
+}  
