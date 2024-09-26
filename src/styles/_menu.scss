@@ -101,7 +101,8 @@ $bg-color-earth: #1A1D28;
                     justify-content: end;
                     padding-right: 188px;
                 }
-                a{
+                button{
+                    background: transparent;
                     border-radius: 50%;
                     border: 2px solid $bg-color;
                     width: 35px;

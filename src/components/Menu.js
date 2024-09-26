@@ -1,3 +1,4 @@
+import "../styles/_menu.scss";
 import React from "react";
 
 export default function Menu({ openModal }) {
