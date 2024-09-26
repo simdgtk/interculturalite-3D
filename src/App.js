@@ -4,12 +4,14 @@ import Scene from "./components/Scene";
 import Modal from "./components/Modal";
 import Menu from "./components/Menu";
 import "./styles/index.scss";
+import MentionsLegales from "./components/mentionslegales";
 
 function App() {
   return (
-     <Suspense fallback={<Fallback />}>
-     <Scene />
-     </Suspense>
+    //  <Suspense fallback={<Fallback />}>
+    //  <Scene />
+    //  </Suspense>
+    <MentionsLegales/>
     // <Menu />
   );
 }
