@@ -6,9 +6,16 @@ import { useGSAP } from "@gsap/react";
 const Modal = ({ title, paragraph, isOpen, onClose }) => {
   gsap.registerPlugin(useGSAP);
   const divRef = useRef(null);
+  const titleRef = useRef(null);
 
   useEffect(() => {
     gsap.from(divRef.current, { y: 250, opacity: 0, ease: "power2.out" });
+    gsap.from(titleRef.current, {
+      y: 100,
+      opacity: 0,
+      ease: "power2.out",
+      delay: 0.3,
+    });
   });
   return (
     <div
@@ -18,7 +25,9 @@ const Modal = ({ title, paragraph, isOpen, onClose }) => {
     >
       <div className="bloc">
         <div className="header-modal">
-          <h2>{title}</h2>
+          <div className="title-cache">
+            <h2 ref={titleRef}>{title}</h2>
+          </div>
           <button onClick={onClose}>
             <img src="./close.svg" alt="image close"></img>
           </button>

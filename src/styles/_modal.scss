@@ -57,17 +57,21 @@
         align-items: center;
         margin-bottom: 40px;
 
-        h2 {
-            font-family: 'Satoshi';
-            font-weight: bold;
-            font-size: 36px;
+        .title-cache {
+            clip-path: polygon(0 0, 100% 0, 100% 120%, 0% 120%);
 
-            @media (min-width: 760px) {
-                font-size: 60px;
-            }
+            h2 {
+                font-family: 'Satoshi';
+                font-weight: bold;
+                font-size: 36px;
 
-            @media (min-width: 1080px) {
-                font-size: 90px;
+                @media (min-width: 760px) {
+                    font-size: 60px;
+                }
+
+                @media (min-width: 1080px) {
+                    font-size: 90px;
+                }
             }
         }
 
