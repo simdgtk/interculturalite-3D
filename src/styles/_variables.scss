@@ -14,6 +14,24 @@ $bg-color-earth: #1A1D28;
 }
 
 @font-face {
+  font-family: "Noto";
+  src: url("../../public/fonts/NotoSans-Bold.ttf") format("ttf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Noto";
+  src: url("../../public/fonts/NotoSans-Bold.woff") format("woff");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Noto";
+  src: url("../../public/fonts/NotoSans-Bold.woff2") format("woff2");
+  font-weight: 800;
+}
+
+@font-face {
   font-family: "Satoshi";
   src: url("../../public/fonts/Satoshi-Medium.woff2") format("woff2");
   font-weight: 500;

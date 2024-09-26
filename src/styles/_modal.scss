@@ -1,17 +1,46 @@
 @import './variables';
 
 .modal {
-position: fixed;
+    position: absolute;
+    display: block;
     top: 0;
     left: 0;
-    width: auto;
+    width: 95%;
+    transform: translateX(2.5%) translateY(2.5%);
     background-color: $bg-color;
     border-radius: 23px;
-    background-image: url(../../public/so-white.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(../../public/noise_background.png);
     background-position: center center;
     z-index: 999;
+
+    &.modal-closed {
+        display: none;
+    }
+
+    button {
+        width: 25px;
+        height: 25px;
+        border: none;
+        background-color: transparent;
+        opacity: 0.7;
+        transition: 0.3s;
+        cursor: pointer;
+
+        &:hover {
+            transform: 0.3s;
+            opacity: 1;
+        }
+
+        @media (min-width: 760px) {
+            width: 45px;
+            height: 45px;
+        }
+
+        @media (min-width: 1080px) {
+            width: 70px;
+            height: 70px;
+        }
+    }
 
     .bloc {
         padding: 5% 6%;
@@ -28,44 +57,25 @@ position: fixed;
         align-items: center;
         margin-bottom: 40px;
 
-        h2 {
-            font-family: 'Satoshi';
-            font-weight: bold;
-            font-size: 36px;
+        .title-cache {
+            clip-path: polygon(0 0, 100% 0, 100% 120%, 0% 120%);
 
-            @media (min-width: 760px) {
-                font-size: 60px;
-            }
+            h2 {
+                font-family: 'Satoshi';
+                font-weight: bold;
+                font-size: 36px;
 
-            @media (min-width: 1080px) {
-                font-size: 90px;
-            }
-        }
+                @media (min-width: 760px) {
+                    font-size: 60px;
+                }
 
-        button {
-            width: 25px;
-            height: 25px;
-            border: none;
-            background-color: none;
-            opacity: 0.7;
-            transition: 0.3s;
-            cursor: pointer;
-
-            &:hover {
-                transform: 0.3s;
-                opacity: 1;
-            }
-
-            @media (min-width: 760px) {
-                width: 45px;
-                height: 45px;
-            }
-
-            @media (min-width: 1080px) {
-                width: 70px;
-                height: 70px;
+                @media (min-width: 1080px) {
+                    font-size: 90px;
+                }
             }
         }
+
+
     }
 
     .body-modal {
