@@ -17,7 +17,7 @@ export default function Model(props) {
       {
         pin1: {
           id: 1,
-          title: "Introduction à React",
+          title: "Rite de passage des Satere-Mawe",
           image_url: "https://example.com/images/react-intro.png",
           paragraph:
             "React est une bibliothèque JavaScript populaire pour construire des interfaces utilisateurs interactives et réactives.",
@@ -26,10 +26,10 @@ export default function Model(props) {
       {
         pin2: {
           id: 2,
-          title: "Découverte de Three.js",
+          title: "Manene",
           image_url: "https://example.com/images/threejs-intro.png",
           paragraph:
-            "Three.js permet de créer des graphiques 3D interactifs sur le web en utilisant WebGL.",
+            "Au cœur des montagnes de Sulawesi, en Indonésie, un rituel fascinant se déroule tous les trois ans, le Manene. ci, la mort ne marque pas la fin, mais une continuité avec les vivants. Les familles déterrent leurs défunts, les habillent de vêtements neufs et les exposent au regard de tous, comme s’ils faisaient à nouveau partie de la communauté. Les visages des morts, parfois étonnamment bien conservés, défilent à travers le village dans une procession calme et respectueuse. Une vieille femme, serrant la main de son mari décédé, murmure, 'Il veille toujours sur nous'. Pour les habitants, la mort n'est qu'un passage, un état différent mais jamais vraiment absent. Le mystère du Manene réside dans cette étrange proximité avec la mort. Ici, elle est célébrée comme une étape de la vie, laissant à ceux qui assistent à cette cérémonie l’impression troublante que les frontières entre les mondes ne sont peut-être pas aussi nettes qu’elles paraissent.",
         },
       },
       {
