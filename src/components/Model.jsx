@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useGLTF, Float, Html } from "@react-three/drei";
 import Modal from "./Modal";
 
-export default function Model(props) {
+export default function Model({ props, sport = false, rituel = false }) {
   const { nodes, materials } = useGLTF("/earthCompressed.glb");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState({
@@ -77,98 +77,100 @@ export default function Model(props) {
           material={materials.terre}
           scale={0.005}
         />
-        <Float speed={1} rotationIntensity={2} floatIntensity={1}>
-          <group
-            position={[1.664, 2.266, -1.337]}
-            rotation={[-0.72, -0.175, 2.702]}
-            scale={[0.039, 0.071, 0.039]}
-          >
-            <mesh
-              castShadow
-              receiveShadow
-              geometry={nodes.Cylinder003.geometry}
-              material={materials["Material.011"]}
-            />
-            <mesh
-              castShadow
-              receiveShadow
-              geometry={nodes.Cylinder003_1.geometry}
-              material={materials["Material.012"]}
-            />
-            <mesh
-              castShadow
-              receiveShadow
-              geometry={nodes.Cylinder003_2.geometry}
-              material={materials["Material.013"]}
-            />
-            <mesh
-              castShadow
-              receiveShadow
-              geometry={nodes.Cylinder003_3.geometry}
-              material={materials["Material.014"]}
-            />
-            <mesh
-              castShadow
-              receiveShadow
-              geometry={nodes.Cylinder003_4.geometry}
-              material={materials["Material.015"]}
-            />
-            <mesh
-              castShadow
-              receiveShadow
-              geometry={nodes.Cylinder003_5.geometry}
-              material={materials["Material.016"]}
-            />
-            <mesh
-              castShadow
-              receiveShadow
-              geometry={nodes.Cylinder003_6.geometry}
-              material={materials["Material.017"]}
-            />
-            <mesh
-              castShadow
-              receiveShadow
-              geometry={nodes.Cylinder003_7.geometry}
-              material={materials["Material.018"]}
-            />
-            <mesh
-              castShadow
-              receiveShadow
-              geometry={nodes.Cylinder003_8.geometry}
-              material={materials["Material.019"]}
-            />
-            <mesh
-              castShadow
-              receiveShadow
-              geometry={nodes.Cylinder003_9.geometry}
-              material={materials["Material.020"]}
-            />
-            <mesh
-              castShadow
-              receiveShadow
-              geometry={nodes.Cylinder003_10.geometry}
-              material={materials["Material.021"]}
-            />
-            <mesh
-              castShadow
-              receiveShadow
-              geometry={nodes.Cylinder003_11.geometry}
-              material={materials["Material.022"]}
-            />
-            <mesh
-              castShadow
-              receiveShadow
-              geometry={nodes.Cylinder003_12.geometry}
-              material={materials["Material.023"]}
-            />
-            <mesh
-              castShadow
-              receiveShadow
-              geometry={nodes.Cylinder003_13.geometry}
-              material={materials["Material.024"]}
-            />
-          </group>
-        </Float>
+        {rituel && (
+          <Float speed={1} rotationIntensity={2} floatIntensity={1}>
+            <group
+              position={[1.664, 2.266, -1.337]}
+              rotation={[-0.72, -0.175, 2.702]}
+              scale={[0.039, 0.071, 0.039]}
+            >
+              <mesh
+                castShadow
+                receiveShadow
+                geometry={nodes.Cylinder003.geometry}
+                material={materials["Material.011"]}
+              />
+              <mesh
+                castShadow
+                receiveShadow
+                geometry={nodes.Cylinder003_1.geometry}
+                material={materials["Material.012"]}
+              />
+              <mesh
+                castShadow
+                receiveShadow
+                geometry={nodes.Cylinder003_2.geometry}
+                material={materials["Material.013"]}
+              />
+              <mesh
+                castShadow
+                receiveShadow
+                geometry={nodes.Cylinder003_3.geometry}
+                material={materials["Material.014"]}
+              />
+              <mesh
+                castShadow
+                receiveShadow
+                geometry={nodes.Cylinder003_4.geometry}
+                material={materials["Material.015"]}
+              />
+              <mesh
+                castShadow
+                receiveShadow
+                geometry={nodes.Cylinder003_5.geometry}
+                material={materials["Material.016"]}
+              />
+              <mesh
+                castShadow
+                receiveShadow
+                geometry={nodes.Cylinder003_6.geometry}
+                material={materials["Material.017"]}
+              />
+              <mesh
+                castShadow
+                receiveShadow
+                geometry={nodes.Cylinder003_7.geometry}
+                material={materials["Material.018"]}
+              />
+              <mesh
+                castShadow
+                receiveShadow
+                geometry={nodes.Cylinder003_8.geometry}
+                material={materials["Material.019"]}
+              />
+              <mesh
+                castShadow
+                receiveShadow
+                geometry={nodes.Cylinder003_9.geometry}
+                material={materials["Material.020"]}
+              />
+              <mesh
+                castShadow
+                receiveShadow
+                geometry={nodes.Cylinder003_10.geometry}
+                material={materials["Material.021"]}
+              />
+              <mesh
+                castShadow
+                receiveShadow
+                geometry={nodes.Cylinder003_11.geometry}
+                material={materials["Material.022"]}
+              />
+              <mesh
+                castShadow
+                receiveShadow
+                geometry={nodes.Cylinder003_12.geometry}
+                material={materials["Material.023"]}
+              />
+              <mesh
+                castShadow
+                receiveShadow
+                geometry={nodes.Cylinder003_13.geometry}
+                material={materials["Material.024"]}
+              />
+            </group>
+          </Float>
+        )}
         <group scale={0.005} onClick={(event) => handleClick(2, event)}>
           <mesh
             castShadow
@@ -281,20 +283,22 @@ export default function Model(props) {
             material={materials.metal}
           />
         </group>
-        <group scale={0.005} onClick={(event) => handleClick(1, event)}>
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Cube013.geometry}
-            material={materials.rouge}
-          />
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Cube013_1.geometry}
-            material={materials.metal}
-          />
-        </group>
+        {sport && (
+          <group scale={0.005} onClick={(event) => handleClick(1, event)}>
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cube013.geometry}
+              material={materials.rouge}
+            />
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cube013_1.geometry}
+              material={materials.metal}
+            />
+          </group>
+        )}
         <group scale={0.005} onClick={(event) => handleClick(2, event)}>
           <mesh
             castShadow

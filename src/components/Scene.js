@@ -53,7 +53,7 @@ export default function Scene() {
           >
             <Modal />
           </Html> */}
-          <Model onClick={handleClick} showFrance />
+          <Model onClick={handleClick} sport rituel />
         </Canvas>
         {/* <Modal /> */}
       </div>
