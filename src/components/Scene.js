@@ -14,10 +14,18 @@ export default function Scene() {
     event.stopPropagation(); // pour stopper la propagation, que les éléments de derrière ne soient pas cliqués
     console.log("Vous avez cliqué sur le modèle !");
   };
+  const [isSport, setIsSport] = useState(true);
   return (
     <>
       <div className="earth">
         <Interculturality />
+        <button
+          onClick={() => {
+            setIsSport(!isSport);
+          }}
+        >
+          Test
+        </button>
         <Canvas
           camera={{
             fov: 70,
@@ -32,11 +40,11 @@ export default function Scene() {
           ref={canvasRef}
         >
           <ambientLight intensity={4} />
-          <Environment
+          {/* <Environment
             preset="sunset"
             backgroundIntensity={2}
             backgroundBlurriness={1}
-          ></Environment>
+          ></Environment> */}
           <OrbitControls enableDamping maxDistance={10} minDistance={5} />
           {/* <axesHelper args={[5]} /> */}
           <directionalLight
@@ -53,7 +61,7 @@ export default function Scene() {
           >
             <Modal />
           </Html> */}
-          <Model onClick={handleClick} sport rituel />
+          <Model onClick={handleClick} sport={isSport ? true : false} />
         </Canvas>
         {/* <Modal /> */}
       </div>
