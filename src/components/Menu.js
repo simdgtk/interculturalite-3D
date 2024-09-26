@@ -8,7 +8,7 @@ export default function Menu({ openModal }) {
       <div className="container">
         <div className="title-menu">
           <Interculturality small />
-          <h1>Interculturalité</h1>
+          {/* <h1>Interculturalité</h1> */}
         </div>
         <div className="img-menu">
           <img src="./human1.png" alt="human 1"></img>

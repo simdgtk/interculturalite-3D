@@ -7,19 +7,21 @@
   overflow: hidden;
   background-color: $bg-color-earth;
 
-  .interculturality {
-    font-family: "Noto", sans-serif;
-    font-size: 8rem;
-    font-weight: 750;
-    margin: 1rem 0 0 2rem;
-    color: $bg-color;
-    z-index: -1;
-    position: absolute;
-    word-break: break-all;
-    user-select: none;
+}
 
-    &.small {
-      font-size: 4rem;
-    }
+.interculturality {
+  font-family: "Noto", sans-serif;
+  font-size: 8rem;
+  font-weight: 750;
+  margin: 1rem 0 0 2rem;
+  color: $bg-color;
+  z-index: -1;
+  position: absolute;
+  word-break: break-all;
+  user-select: none;
+
+  &.small {
+    font-size: 4rem;
+    z-index: 4;
   }
 }
