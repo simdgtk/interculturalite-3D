@@ -1,13 +1,14 @@
 import "../styles/_menu.scss";
 import React from "react";
+import Interculturality from "./Interculturality";
 
 export default function Menu({ openModal }) {
   return (
     <div className="menu">
       <div className="container">
         <div className="title-menu">
-          <Inteculturalite small />
-          <h1>Interculturalité</h1>
+          <Interculturality small />
+          {/* <h1>Interculturalité</h1> */}
         </div>
         <div className="img-menu">
           <img src="./human1.png" alt="human 1"></img>
