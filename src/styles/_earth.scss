@@ -7,6 +7,45 @@
   overflow: hidden;
   background-color: $bg-color-earth;
 
+  .filters {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem;
+    flex-direction: column;
+    right: 20px;
+    top: 20px;
+    z-index: 9999;
+
+    .cache {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+    button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    ul {
+      &.closed {
+        display: none;
+      }
+    }
+
+    ul li button {
+      width: 100%;
+      display: flex;
+      padding: 0;
+      line-height: 100%;
+      text-align: right;
+      flex-direction: column;
+      color: $white;
+      text-align: right;
+      font-size: 48px;
+      font-family: 'Noto', sans-serif;
+    }
+  }
 }
 
 .interculturality {
