@@ -73,7 +73,12 @@ export default function Model({ props, sport = false, rituel = false }) {
           id: 7,
           title: "Masque de Côte d'Ivoire",
           image_url: "./Images/mask.webp",
-          paragraph: "Le guerrier protège la tribu et participe aux batailles.",
+          paragraph: `Les masques africains sont utilisés pour certains rituels et cérémonies traditionnels. Ils permettent un rapprochement de l'Homme au sacré, le porteur du masque pouvant communiquer avec des ancêtres ou des déités. Ils sont aussi utilisés pour porter chance au peuple qui l’utilise. Chaque masque a sa signification propre.
+
+En Côte d'Ivoire, le nombre important d’ethnies présentes a permis une multitude de masques. Parmi eux, le peuple Gouros, connu pour ses masques, les masques Gouro notamment, se distinguent par leur variété de couleurs et de sculptures. Ils utilisent des couleurs traditionnelles : le rouge, le noir, le jaune et le blanc. Les masques Bété, du groupe ethnique bété, ne sont eux pas utilisés majoritairement dans des fêtes traditionnelles mais dans des cérémonies de réjouissances ou lors des deuils.
+
+Pendant la colonisation, les masques étaient brûlés par des missionnaires chrétiens dans une volonté d’évangéliser le pays. La Côte d’Ivoire n’a jamais autorisé l'exportation des masques, et ne le permet toujours pas.
+`,
         },
       },
       {
@@ -163,112 +168,113 @@ Plus récemment, la lutte sénégalaise moderne a été pensée pour faire se re
           material={materials.terre}
           scale={0.005}
         />
-          <Float speed={1} rotationIntensity={2} floatIntensity={1}>
-            <group onClick={(event) => handleClick(12, event)}
-              position={[1.664, 2.266, -1.337]}
-              rotation={[-0.72, -0.175, 2.702]}
-              scale={[0.039, 0.071, 0.039]}
-            >
-              <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.Cylinder003.geometry}
-                material={materials["Material.011"]}
-              />
-              <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.Cylinder003_1.geometry}
-                material={materials["Material.012"]}
-              />
-              <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.Cylinder003_2.geometry}
-                material={materials["Material.013"]}
-              />
-              <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.Cylinder003_3.geometry}
-                material={materials["Material.014"]}
-              />
-              <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.Cylinder003_4.geometry}
-                material={materials["Material.015"]}
-              />
-              <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.Cylinder003_5.geometry}
-                material={materials["Material.016"]}
-              />
-              <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.Cylinder003_6.geometry}
-                material={materials["Material.017"]}
-              />
-              <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.Cylinder003_7.geometry}
-                material={materials["Material.018"]}
-              />
-              <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.Cylinder003_8.geometry}
-                material={materials["Material.019"]}
-              />
-              <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.Cylinder003_9.geometry}
-                material={materials["Material.020"]}
-              />
-              <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.Cylinder003_10.geometry}
-                material={materials["Material.021"]}
-              />
-              <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.Cylinder003_11.geometry}
-                material={materials["Material.022"]}
-              />
-              <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.Cylinder003_12.geometry}
-                material={materials["Material.023"]}
-              />
-              <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.Cylinder003_13.geometry}
-                material={materials["Material.024"]}
-              />
-            </group>
-          </Float>
+        <Float speed={1} rotationIntensity={2} floatIntensity={1}>
+          <group
+            onClick={(event) => handleClick(12, event)}
+            position={[1.664, 2.266, -1.337]}
+            rotation={[-0.72, -0.175, 2.702]}
+            scale={[0.039, 0.071, 0.039]}
+          >
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cylinder003.geometry}
+              material={materials["Material.011"]}
+            />
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cylinder003_1.geometry}
+              material={materials["Material.012"]}
+            />
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cylinder003_2.geometry}
+              material={materials["Material.013"]}
+            />
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cylinder003_3.geometry}
+              material={materials["Material.014"]}
+            />
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cylinder003_4.geometry}
+              material={materials["Material.015"]}
+            />
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cylinder003_5.geometry}
+              material={materials["Material.016"]}
+            />
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cylinder003_6.geometry}
+              material={materials["Material.017"]}
+            />
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cylinder003_7.geometry}
+              material={materials["Material.018"]}
+            />
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cylinder003_8.geometry}
+              material={materials["Material.019"]}
+            />
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cylinder003_9.geometry}
+              material={materials["Material.020"]}
+            />
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cylinder003_10.geometry}
+              material={materials["Material.021"]}
+            />
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cylinder003_11.geometry}
+              material={materials["Material.022"]}
+            />
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cylinder003_12.geometry}
+              material={materials["Material.023"]}
+            />
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cylinder003_13.geometry}
+              material={materials["Material.024"]}
+            />
+          </group>
+        </Float>
         {rituel && (
           <group scale={0.005} onClick={(event) => handleClick(1, event)}>
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Cube006.geometry}
-            material={materials.rouge}
-          />
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Cube006_1.geometry}
-            material={materials.metal}
-          />
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cube006.geometry}
+              material={materials.rouge}
+            />
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cube006_1.geometry}
+              material={materials.metal}
+            />
           </group>
         )}
         {rituel && (
@@ -288,148 +294,148 @@ Plus récemment, la lutte sénégalaise moderne a été pensée pour faire se re
           </group>
         )}
         {rituel && (
-        <group scale={0.005} onClick={(event) => handleClick(3, event)}>
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Cube015.geometry}
-            material={materials.rouge}
-          />
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Cube015_1.geometry}
-            material={materials.metal}
-          />
-        </group>
+          <group scale={0.005} onClick={(event) => handleClick(3, event)}>
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cube015.geometry}
+              material={materials.rouge}
+            />
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cube015_1.geometry}
+              material={materials.metal}
+            />
+          </group>
         )}
         {rituel && (
-        <group scale={0.005} onClick={(event) => handleClick(4, event)}>
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Cube014.geometry}
-            material={materials.rouge}
-          />
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Cube014_1.geometry}
-            material={materials.metal}
-          />
-        </group>
+          <group scale={0.005} onClick={(event) => handleClick(4, event)}>
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cube014.geometry}
+              material={materials.rouge}
+            />
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cube014_1.geometry}
+              material={materials.metal}
+            />
+          </group>
         )}
         {rituel && (
-        <group scale={0.005} onClick={(event) => handleClick(5, event)}>
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Cube005.geometry}
-            material={materials.rouge}
-          />
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Cube005_1.geometry}
-            material={materials.metal}
-          />
-        </group>
+          <group scale={0.005} onClick={(event) => handleClick(5, event)}>
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cube005.geometry}
+              material={materials.rouge}
+            />
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cube005_1.geometry}
+              material={materials.metal}
+            />
+          </group>
         )}
         {rituel && (
-        <group scale={0.005} onClick={(event) => handleClick(6, event)}>
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Cube003.geometry}
-            material={materials.rouge}
-          />
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Cube003_1.geometry}
-            material={materials.metal}
-          />
-        </group>
+          <group scale={0.005} onClick={(event) => handleClick(6, event)}>
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cube003.geometry}
+              material={materials.rouge}
+            />
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cube003_1.geometry}
+              material={materials.metal}
+            />
+          </group>
         )}
         {rituel && (
-        <group scale={0.005} onClick={(event) => handleClick(7, event)}>
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Cube012.geometry}
-            material={materials.rouge}
-          />
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Cube012_1.geometry}
-            material={materials.metal}
-          />
-        </group>
+          <group scale={0.005} onClick={(event) => handleClick(7, event)}>
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cube012.geometry}
+              material={materials.rouge}
+            />
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cube012_1.geometry}
+              material={materials.metal}
+            />
+          </group>
         )}
         {sport && (
-        <group scale={0.005} onClick={(event) => handleClick(8, event)}>
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Cube011.geometry}
-            material={materials.vert}
-          />
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Cube011_1.geometry}
-            material={materials.metal}
-          />
-        </group>
+          <group scale={0.005} onClick={(event) => handleClick(8, event)}>
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cube011.geometry}
+              material={materials.vert}
+            />
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cube011_1.geometry}
+              material={materials.metal}
+            />
+          </group>
         )}
         {sport && (
-        <group scale={0.005} onClick={(event) => handleClick(9, event)}>
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Cube009.geometry}
-            material={materials.vert}
-          />
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Cube009_1.geometry}
-            material={materials.metal}
-          />
-        </group>
+          <group scale={0.005} onClick={(event) => handleClick(9, event)}>
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cube009.geometry}
+              material={materials.vert}
+            />
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cube009_1.geometry}
+              material={materials.metal}
+            />
+          </group>
         )}
         {sport && (
-        <group scale={0.005} onClick={(event) => handleClick(10, event)}>
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Cube010.geometry}
-            material={materials.vert}
-          />
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Cube010_1.geometry}
-            material={materials.metal}
-          />
-        </group>
+          <group scale={0.005} onClick={(event) => handleClick(10, event)}>
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cube010.geometry}
+              material={materials.vert}
+            />
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cube010_1.geometry}
+              material={materials.metal}
+            />
+          </group>
         )}
         {sport && (
-        <group scale={0.005} onClick={(event) => handleClick(11, event)}>
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Cube008.geometry}
-            material={materials.vert}
-          />
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Cube008_1.geometry}
-            material={materials.metal}
-          />
-        </group>
+          <group scale={0.005} onClick={(event) => handleClick(11, event)}>
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cube008.geometry}
+              material={materials.vert}
+            />
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes.Cube008_1.geometry}
+              material={materials.metal}
+            />
+          </group>
         )}
       </group>
     </>
