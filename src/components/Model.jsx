@@ -129,7 +129,7 @@ Plus récemment, la lutte sénégalaise moderne a été pensée pour faire se re
           paragraph:
             "La station spatiale internationale incarne un espace unique d’interculturalité et de collaboration. Depuis sa mise en orbite en 1998, elle a accueilli seulement 230 astronautes issus d’agences spatiales de nations différentes (NASA(USA), Roscosmos(Russie), 'ESA (Europe), la JAXA (Japon) et la CSA (Canada)). Occupée en permanence par un peu moins d’une dizaine d’astronautes aux nationalités et cultures différentes, la station permet d’élargir la recherche scientifique. De par ces 400m3 habitables, on retrouve des hommes et des femmes aux cultures qui divergent mais travaillent ensemble, apportant chacun une opinion et une expertise unique et cela, grâce à cette diversité. Dans les facteurs culturels majeurs du quotidien, la barrière linguistique s’apparente à une problématique majeure. C’est ainsi qu’il a été établi que la langue d’usage à bord de l’ISS est l’anglais. Finalement, après ces 30 années de fonctionnement, la NASA a annoncé, le 26 juin 2024, la retraite de l’ISS. Dans son communiqué, elle annonce le démantèlement et la désorbitation du laboratoire pour 2031, grâce à l’aide de SpaceX. Toutefois, plusieurs entreprises privées seraient susceptibles de construire un nouveau complexe orbital afin de remplacer l’ISS.",
         },
-      }
+      },
     ];
 
     const pinKey = `pin${pinNumber}`;
@@ -437,7 +437,8 @@ Plus récemment, la lutte sénégalaise moderne a été pensée pour faire se re
             />
           </group>
         )}
-        <group scale={0.005} onClick={(event) => handleClick(12, event)}>
+        {sport && (
+          <group scale={0.005} onClick={(event) => handleClick(12, event)}>
             <mesh
               castShadow
               receiveShadow
@@ -451,6 +452,7 @@ Plus récemment, la lutte sénégalaise moderne a été pensée pour faire se re
               material={materials.metal}
             />
           </group>
+        )}
       </group>
     </>
   );
