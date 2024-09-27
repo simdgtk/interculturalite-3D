@@ -1,7 +1,8 @@
 import { useEffect, useState, useRef } from "react";
 
-export default function Interculturality({ small = false }) {
-  const interculturalityWords = [
+export default function Interculturality({
+  small = false,
+  internationalWords = [
     "interculturality", // Anglais
     "تعدد الثقافات", // Arabe
     "Interculturalité", // Français
@@ -71,24 +72,25 @@ export default function Interculturality({ small = false }) {
     "Angkultur", // Khmer (Cambodge)
     "कला आंतरक्रियेत", // Konkani (Goa)
     "Transkulturaj", // Espéranto
-  ];
+  ],
+}) {
   const [index, setIndex] = useState(0);
-  const [word, setWord] = useState(interculturalityWords[0]);
+  const [word, setWord] = useState(internationalWords[0]);
   const intervalRef = useRef(null);
 
   useEffect(() => {
     intervalRef.current = setInterval(() => {
       setIndex((prevIndex) =>
-        prevIndex === interculturalityWords.length - 1 ? 0 : prevIndex + 1
+        prevIndex === internationalWords.length - 1 ? 0 : prevIndex + 1
       );
     }, 1500);
 
     return () => clearInterval(intervalRef.current);
-  }, [interculturalityWords.length]);
+  }, [internationalWords.length]);
 
   useEffect(() => {
-    setWord(interculturalityWords[index]);
-  }, [index, interculturalityWords]);
+    setWord(internationalWords[index]);
+  }, [index, internationalWords]);
   return (
     <div className={`interculturality ${small ? "small" : ""}`}>
       <span id="span">{word}</span>
