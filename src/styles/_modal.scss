@@ -6,8 +6,8 @@
     top: 0;
     left: 0;
     width: 95%;
-    max-height: 90vh; // Set maximum height relative to the viewport
-    overflow-y: auto; // Enable vertical scrolling when content overflows
+    max-height: 95vh;
+    overflow-y: auto;
     transform: translateX(2.5%) translateY(2.5%);
     background-color: $bg-color;
     border-radius: 23px;
