@@ -5,6 +5,7 @@ import Model from "./Model";
 import PopupTest from "./PopupTest";
 import Modal from "./Modal";
 import Interculturality from "./Interculturality";
+import "../styles/_filters.scss";
 
 export default function Scene() {
   const cameraRef = useRef();
@@ -92,20 +93,27 @@ export default function Scene() {
             "Homoj", // Espéranto
           ]}
         />
-        <button
-          onClick={() => {
-            setIsSport(!isSport);
-          }}
-        >
-          Test
-        </button>
-        <button
-          onClick={() => {
-            setIsRitual(!isRitual);
-          }}
-        >
-          Test
-        </button>
+        <div className="container-filters">
+          <div className="filters">
+            <button
+              onClick={() => {
+                setIsSport(!isSport);
+              }}
+            >
+              Test
+            </button>
+            <button
+              onClick={() => {
+                setIsRitual(!isRitual);
+              }}
+            >
+              Test
+            </button>
+          </div>
+          <div className="text-filter">
+            <h2>Filtres</h2>
+          </div>
+        </div>
         <Canvas
           camera={{
             fov: 70,
