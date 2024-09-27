@@ -5,6 +5,7 @@ import Model from "./Model";
 import PopupTest from "./PopupTest";
 import Modal from "./Modal";
 import Interculturality from "./Interculturality";
+import "../styles/_filters.scss";
 
 export default function Scene() {
   const cameraRef = useRef();
@@ -12,6 +13,7 @@ export default function Scene() {
 
   const [isSport, setIsSport] = useState(true);
   const [isRitual, setIsRitual] = useState(true);
+  const [filterClose, setFilterClose] = useState(false)
   return (
     <>
       <div className="earth">
@@ -88,20 +90,36 @@ export default function Scene() {
             "Homoj", // Espéranto
           ]}
         />
-        <button
-          onClick={() => {
-            setIsSport(!isSport);
-          }}
-        >
-          Sports
-        </button>
-        <button
-          onClick={() => {
-            setIsRitual(!isRitual);
-          }}
-        >
-          Rituels
-        </button>
+        <div className="container-button-scene">
+          <div className="div-button-h3">
+            <button
+              className={`button-filter ${filterClose ? 'close-animation' : ''}`}
+              onClick={() => {
+                setFilterClose(!filterClose); // Inverser l'état pour afficher/masquer
+              }}
+            >
+              Filtres
+            </button>
+            <div className={`button-scene ${filterClose ? 'closed' : ''}`}>
+              <button
+                onClick={() => {
+                  setIsSport(!isSport);
+                }}
+                className={isSport ? "active" : ""}
+              >
+                Sports
+              </button>
+              <button
+                onClick={() => {
+                  setIsRitual(!isRitual);
+                }}
+                className={isRitual ? "active" : ""}
+              >
+                Rituels
+              </button>
+            </div>
+          </div>
+        </div>
         <Canvas
           camera={{
             fov: 70,
@@ -123,7 +141,7 @@ export default function Scene() {
           ></Environment>
           <OrbitControls
             enablePan={false}
-             enableDamping
+            enableDamping
             maxDistance={10}
             minDistance={5}
           />

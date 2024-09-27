@@ -1,0 +1,70 @@
+@import './variables';
+
+.container-button-scene {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex; // Ajout de flex pour centrer les éléments
+
+    .div-button-h3 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end; // Alignement à droite
+        align-items: center;
+        gap: 10px;
+
+        .button-filter {
+            background: transparent;
+            writing-mode: vertical-rl;
+            border: 0;
+            color: $white;
+            font-size: 25px;
+            z-index: 99999;
+            cursor: pointer;
+            transition: transform 0.5s ease, background-color 0.3s ease;
+
+            &.close-animation {
+                transform: translateX(160px); // Déplace le bouton de 100 pixels vers la droite
+            }
+
+
+        }
+    }
+
+    .button-scene {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-right: 15px;
+        transition: transform 0.5s ease; // Animation de transition pour le mouvement
+
+        &.closed {
+            transform: translateX(150%); // Déplace les boutons vers la droite
+        }
+
+        button {
+            width: 150px;
+            height: 40px;
+            z-index: 99999;
+            cursor: pointer;
+            font-size: 25px;
+            background: transparent;
+            color: $white;
+            font-weight: bold;
+            border: 1px solid $white;
+            border-radius: 20px 0px 0px 20px;
+            transition: background-color 0.3s ease;
+
+            &:active {
+                transform: scale(0.98); // Effet d'appui
+            }
+
+            &.active {
+                background-color: $white; // Change la couleur de fond
+                color: $bg-color-earth; // Change la couleur du texte
+            }
+        }
+    }
+}
